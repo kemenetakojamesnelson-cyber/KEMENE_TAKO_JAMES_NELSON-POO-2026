@@ -52,7 +52,7 @@ Deux réseaux IP ont également été créés :
 
 Des tests d’affichage ont été effectués dans la console Java.
 
----
+
 
 ## Réponses aux questions
 
