@@ -96,7 +96,7 @@ ADMINISTRATION -> 192.168.2.0/26 | Masque : 255.255.255.192 | Capacité : 62 hô
 
 
 
-## 🚨 VLANs critiques
+##  VLANs critiques
 
 Les VLANs critiques (capacité > 100 hôtes) sont affichés grâce à la méthode :
 
