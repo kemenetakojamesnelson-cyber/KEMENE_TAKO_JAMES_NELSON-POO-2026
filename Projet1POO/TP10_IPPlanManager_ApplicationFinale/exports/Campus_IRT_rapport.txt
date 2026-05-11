@@ -1,0 +1,37 @@
+==========================================
+  RAPPORT TECHNIQUE - CAMPUS IRT
+==========================================
+
+--- BESOINS SAISIS ---
+  KEMENE : 600 hôtes
+  ETUDIANTS : 500 hôtes
+  WIFI_INVITES : 200 hôtes
+  ENSEIGNANTS : 120 hôtes
+  LABORATOIRES : 60 hôtes
+  SERVEURS : 30 hôtes
+
+--- PLAN D'ADRESSAGE VLSM ---
+  KEMENE -> 10.10.0.0/22 | Masque : 255.255.252.0 | Demandés : 600 | Capacité : 1022 | Marge : 422
+  ETUDIANTS -> 10.10.4.0/23 | Masque : 255.255.254.0 | Demandés : 500 | Capacité : 510 | Marge : 10
+  WIFI_INVITES -> 10.10.6.0/24 | Masque : 255.255.255.0 | Demandés : 200 | Capacité : 254 | Marge : 54
+  ENSEIGNANTS -> 10.10.7.0/25 | Masque : 255.255.255.128 | Demandés : 120 | Capacité : 126 | Marge : 6
+  LABORATOIRES -> 10.10.7.128/26 | Masque : 255.255.255.192 | Demandés : 60 | Capacité : 62 | Marge : 2
+  SERVEURS -> 10.10.7.192/27 | Masque : 255.255.255.224 | Demandés : 30 | Capacité : 30 | Marge : 0
+
+--- VLANs CRÉÉS ---
+  VLAN 10 - KEMENE (10.10.0.0)
+  VLAN 20 - ETUDIANTS (10.10.4.0)
+  VLAN 30 - WIFI_INVITES (10.10.6.0)
+  VLAN 40 - ENSEIGNANTS (10.10.7.0)
+  VLAN 50 - LABORATOIRES (10.10.7.128)
+  VLAN 60 - SERVEURS (10.10.7.192)
+
+--- RECOMMANDATIONS ---
+  [MOYENNE] Grand VLAN : Prévoir une supervision réseau renforcée pour le VLAN ETUDIANTS.
+  [MOYENNE] Isolation WIFI : Configurer une isolation stricte du réseau invité.
+  [MOYENNE] Grand VLAN : Prévoir une supervision réseau renforcée pour le VLAN WIFI_INVITES.
+  [HAUTE] Protection Serveurs : Mettre en place des ACL et un pare-feu.
+
+==========================================
+  Fin du rapport
+==========================================

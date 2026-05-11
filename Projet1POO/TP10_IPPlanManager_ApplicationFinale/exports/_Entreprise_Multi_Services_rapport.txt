@@ -1,0 +1,31 @@
+==========================================
+  RAPPORT TECHNIQUE -  ENTREPRISE MULTI SERVICES
+==========================================
+
+--- BESOINS SAISIS ---
+  TECHNIQUE : 120 hotes
+  INVITES : 100 hotes
+  SUPPORT : 60 hotes
+  CAMERAS : 35 hotes
+  DIRECTION : 25 hotes
+
+--- PLAN D'ADRESSAGE VLSM ---
+  TECHNIQUE -> 172.16.0.0/25 | Masque : 255.255.255.128 | Demandes : 120 | Capacite : 126 | Marge : 6
+  INVITES -> 172.16.0.128/25 | Masque : 255.255.255.128 | Demandes : 100 | Capacite : 126 | Marge : 26
+  SUPPORT -> 172.16.1.0/26 | Masque : 255.255.255.192 | Demandes : 60 | Capacite : 62 | Marge : 2
+  CAMERAS -> 172.16.1.64/26 | Masque : 255.255.255.192 | Demandes : 35 | Capacite : 62 | Marge : 27
+  DIRECTION -> 172.16.1.128/27 | Masque : 255.255.255.224 | Demandes : 25 | Capacite : 30 | Marge : 5
+
+--- VLANs CREES ---
+  VLAN 10 - TECHNIQUE (172.16.0.0)
+  VLAN 20 - INVITES (172.16.0.128)
+  VLAN 30 - SUPPORT (172.16.1.0)
+  VLAN 40 - CAMERAS (172.16.1.64)
+  VLAN 50 - DIRECTION (172.16.1.128)
+
+--- RECOMMANDATIONS ---
+  [MOYENNE] Grand VLAN : Prévoir une supervision réseau renforcée pour le VLAN INVITES.
+
+==========================================
+  Fin du rapport
+==========================================

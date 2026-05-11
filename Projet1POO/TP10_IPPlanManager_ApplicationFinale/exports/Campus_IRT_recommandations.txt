@@ -1,0 +1,6 @@
+===== RECOMMANDATIONS IPPLAN-MANAGER =====
+
+[MOYENNE] Grand VLAN : Prévoir une supervision réseau renforcée pour le VLAN ETUDIANTS.
+[MOYENNE] Isolation WIFI : Configurer une isolation stricte du réseau invité.
+[MOYENNE] Grand VLAN : Prévoir une supervision réseau renforcée pour le VLAN WIFI_INVITES.
+[HAUTE] Protection Serveurs : Mettre en place des ACL et un pare-feu.

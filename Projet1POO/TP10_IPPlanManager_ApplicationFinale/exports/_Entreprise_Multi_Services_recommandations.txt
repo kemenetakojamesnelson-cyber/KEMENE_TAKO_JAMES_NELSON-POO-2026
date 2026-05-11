@@ -1,0 +1,3 @@
+===== RECOMMANDATIONS IPPLAN-MANAGER KEMENE TAKO =====
+
+[MOYENNE] Grand VLAN : Prévoir une supervision réseau renforcée pour le VLAN INVITES.

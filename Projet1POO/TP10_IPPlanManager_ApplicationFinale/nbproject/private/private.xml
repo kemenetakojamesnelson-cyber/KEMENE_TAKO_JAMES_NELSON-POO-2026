@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/exception/AdresseIPInvalideException.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/model/ResultatVLSM.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/MoteurVLSM.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/CalculateurReseau.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/console/ConsoleService.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/main/Main.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/repository/FichierPlanRepository.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/exports/campus_irt.csv</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/exports/pme.csv</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/exports/entreprise.csv</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/model/BesoinReseau.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/model/VLAN.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/model/Recommandation.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/GestionnaireVLAN.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/ApplicationIPPlanManager.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/RapportService.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/exception/ChevauchementReseauException.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/exception/ConflitVLANException.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/repository/BesoinRepository.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/InterfaceRegleRecommandation.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/MoteurRecommandation.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/RecommandationGrandVLAN.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/RecommandationServeurs.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/RecommandationWifiInvite.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/src/ipplanmanager/service/ValidateurPlanAdressage.java</file>
+            <file>file:/C:/Users/PC/Desktop/KEMENE_TAKO-POO-2026/Projet1POO/TP10_IPPlanManager_ApplicationFinale/exports/besoins.csv</file>
+        </group>
+    </open-files>
+</project-private>
