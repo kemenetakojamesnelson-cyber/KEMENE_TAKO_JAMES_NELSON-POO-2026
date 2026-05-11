@@ -136,33 +136,13 @@ Tous les fichiers sont créés automatiquement dans le dossier `exports/`.
 
 ## Difficultés rencontrées
 
-1. **Double méthode dans FichierPlanRepository** : deux méthodes
-   `sauvegarderPlanCSV` existaient dans la même classe, ce qui causait
-   une erreur de compilation. La solution a été de supprimer l'ancienne
-   version et de garder uniquement la version complète avec HotesDemandes
-   et Marge.
+- Organisation des packages en architecture professionnelle
+- Gestion des imports après déplacement des classes
+- Gestion des exceptions personnalisées
+- Génération correcte des sous-réseaux VLSM
+- Lecture et écriture de fichiers CSV
+- Synchronisation entre services (VLSM, VLAN, recommandations)
 
-2. **Classe VLAN incompatible** : la classe VLAN utilisait `getId()` et
-   `reseauAssocie` alors que le reste du projet attendait `getNumero()`
-   et une description sous forme de String. La classe a été refactorisée
-   pour correspondre à l'usage réel.
-
-3. **CalculateurReseau incomplet** : la classe ne contenait que deux
-   méthodes non statiques. Il a fallu ajouter les quatre méthodes
-   manquantes (convertirIpEnEntier, convertirEntierEnIp,
-   obtenirMasqueDecimal, calculerTailleBloc) et les rendre toutes
-   statiques pour permettre leur appel depuis MoteurVLSM.
-
-4. **ValidateurPlanAdressage sans exceptions** : la méthode
-   `validerAdresseIP` retournait un boolean au lieu de lancer une
-   exception, et la méthode `validerPlan` n'existait pas. Les deux
-   ont été corrigées pour correspondre aux appels dans
-   ApplicationIPPlanManager.
-
-5. **VLANs qui s'accumulent** : sans réinitialisation du
-   GestionnaireVLAN entre deux générations, les VLANs de la session
-   précédente s'ajoutaient aux nouveaux. La solution a été d'instancier
-   un nouveau GestionnaireVLAN avant chaque génération.
 
 
 
