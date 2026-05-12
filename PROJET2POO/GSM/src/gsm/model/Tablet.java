@@ -6,11 +6,17 @@ public class Tablet extends MS {
     private double ecran;
     private boolean wifi;
 
-    public Tablet(String nom, String prenom,
-                  String msisdn, String imsi,
-                  String marque, double ecran, boolean wifi) {
+    public Tablet(String nom,
+                  String prenom,
+                  String motDePasse,
+                  String msisdn,
+                  String imsi,
+                  String marque,
+                  double ecran,
+                  boolean wifi) {
 
-        super(nom, prenom, msisdn, imsi);
+        super(nom, prenom, motDePasse, msisdn, imsi);
+
         this.marque = marque;
         this.ecran = ecran;
         this.wifi = wifi;
@@ -18,14 +24,20 @@ public class Tablet extends MS {
 
     @Override
     public void afficherCaracteristiques() {
-        System.out.println("=== TABLET ===");
-        System.out.println("Nom: " + nom + " " + prenom);
-        System.out.println("MSISDN: " + msisdn);
-        System.out.println("IMSI: " + imsi);
-        System.out.println("Marque: " + marque);
-        System.out.println("Écran: " + ecran + " pouces");
-        System.out.println("WiFi: " + (wifi ? "Oui" : "Non"));
-        System.out.println("BTS: " +
-                (btsAttache != null ? btsAttache.getNumero() : "Aucune"));
+
+        System.out.println("===== TABLET =====");
+
+        System.out.println("Nom : " + nom);
+
+        System.out.println("Prénom : " + prenom);
+
+        System.out.println("MSISDN : " + msisdn);
+
+        System.out.println("Marque : " + marque);
+
+        System.out.println("Ecran : " + ecran);
+
+        System.out.println("WiFi : "
+                + (wifi ? "Oui" : "Non"));
     }
 }

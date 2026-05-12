@@ -93,9 +93,38 @@ public class BTS {
     // =========================
     // AFFICHAGE
     // =========================
-    public void afficherInfos() {
-        System.out.println("BTS " + numero +
-                " | " + emplacement +
-                " | Utilisateurs : " + utilisateurs.size());
-    }
+   public void afficherInfos() {
+
+    System.out.println("\n================================");
+    System.out.println("            BTS " + numero);
+    System.out.println("================================");
+
+    System.out.println("Emplacement        : "
+            + emplacement);
+
+    System.out.println("Hauteur antenne    : "
+            + hauteur + " m");
+
+    System.out.println("Type milieu        : "
+            + typeMilieu);
+
+    System.out.println("Puissance émission : "
+            + puissanceEmission + " W");
+
+    System.out.println("Capacité max MS    : "
+            + maxUtilisateurs);
+
+    System.out.println("MS connectés       : "
+            + utilisateurs.size());
+
+    System.out.println("Nombre cellules    : "
+            + cellules.size());
+
+    System.out.println("Etat BTS           : "
+            + (estSature()
+               ? "SATURÉE"
+               : "DISPONIBLE"));
+
+    System.out.println("================================");
+}
 }

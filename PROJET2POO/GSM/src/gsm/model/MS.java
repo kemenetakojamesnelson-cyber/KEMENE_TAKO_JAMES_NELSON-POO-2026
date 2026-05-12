@@ -10,18 +10,29 @@ public abstract class MS {
 
     protected String nom;
     protected String prenom;
+    protected String motDePasse;
     protected String msisdn;
     protected String imsi;
+
     protected BTS btsAttache;
+
     protected ArrayList<Appel> appelsRecus;
 
-    public MS(String nom, String prenom,
-              String msisdn, String imsi) {
+    // =========================
+    // CONSTRUCTEUR
+    // =========================
+    public MS(String nom,
+              String prenom,
+              String motDePasse,
+              String msisdn,
+              String imsi) {
 
         this.nom = nom;
         this.prenom = prenom;
+        this.motDePasse = motDePasse;
         this.msisdn = msisdn;
         this.imsi = imsi;
+
         this.appelsRecus = new ArrayList<>();
     }
 
@@ -32,14 +43,17 @@ public abstract class MS {
             throws BTSSatureException, MSDejaAttacheException {
 
         if (this.btsAttache != null) {
-            throw new MSDejaAttacheException("Déjà attaché à une BTS");
+            throw new MSDejaAttacheException(
+                    "MS déjà attaché à une BTS");
         }
 
         if (bts.estSature()) {
-            throw new BTSSatureException("BTS saturée");
+            throw new BTSSatureException(
+                    "BTS saturée");
         }
 
         bts.ajouterMS(this);
+
         this.btsAttache = bts;
     }
 
@@ -47,34 +61,62 @@ public abstract class MS {
     // DETACHEMENT
     // =========================
     public void detacher() {
+
         if (btsAttache != null) {
+
             btsAttache.supprimerMS(msisdn);
+
             btsAttache = null;
         }
     }
 
     // =========================
-    // APPEL
+    // APPELER
     // =========================
-    public void appeler(MS dest, String duree, String date) {
-        Appel a = new Appel(msisdn, nom + " " + prenom, duree, date);
-        dest.recevoirAppel(a);
+    public void appeler(MS destinataire,
+                         String duree,
+                         String date) {
+
+        Appel appel = new Appel(
+                msisdn,
+                nom + " " + prenom,
+                duree,
+                date
+        );
+
+        destinataire.recevoirAppel(appel);
     }
 
     // =========================
-    // RECEPTION APPEL
+    // RECEVOIR APPEL
     // =========================
-    public void recevoirAppel(Appel a) {
-        appelsRecus.add(a);
+    public void recevoirAppel(Appel appel) {
+
+        appelsRecus.add(appel);
     }
 
     // =========================
     // GETTERS
     // =========================
-    public String getMsisdn() { return msisdn; }
-    public String getNom() { return nom; }
-    public String getPrenom() { return prenom; }
-    public BTS getBtsAttache() { return btsAttache; }
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public String getMsisdn() {
+        return msisdn;
+    }
+
+    public String getImsi() {
+        return imsi;
+    }
+
+    public BTS getBtsAttache() {
+        return btsAttache;
+    }
 
     public List<Appel> getAppelsRecus() {
         return appelsRecus;
